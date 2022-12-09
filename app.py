@@ -9,10 +9,7 @@ from repository import ProductRepository
 
 __all__ = ("app", "run")
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 19981e07ccb997dddd303c23274b9c9fa877b223
 app = FastAPI()
 
 
@@ -57,10 +54,6 @@ def _update_quantity(name, quantity: int):
 
 
 def run():
-<<<<<<< HEAD
     """Run the API using Uvicorn"""
-=======
-    Run the API using Uvicorn
->>>>>>> 19981e07ccb997dddd303c23274b9c9fa877b223
     uvicorn.run(app)
 
