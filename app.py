@@ -1,13 +1,13 @@
 # FastAPI app definition, initialization and definition of routes #
 
 
-#import uvicorn
+import uvicorn
 from fastapi import FastAPI, HTTPException
 from models import *
 from repository import ProductRepository
 
 
-__all__ = ("app",)
+__all__ = ("app", "run")
 
 app = FastAPI()
 
@@ -52,7 +52,7 @@ def _update_quantity(name, quantity: int):
         raise HTTPException(status_code=404, detail="Can't update quantity")
 
 
-"""def run():
+def run():
     Run the API using Uvicorn
-    uvicorn.run(app)"""
+    uvicorn.run(app)
 
