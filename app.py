@@ -7,7 +7,7 @@ from models import *
 from repository import ProductRepository
 
 
-__all__ = ("app","run")
+__all__ = ("app", "run")
 
 app = FastAPI()
 
