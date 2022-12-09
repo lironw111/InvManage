@@ -30,7 +30,7 @@ class ProductRepository:
     @staticmethod
     def update(product_name: str, quantity: int):
         """" Update quantity to product  """
-        collection.update_one({"name": product_name}, {"$set": {'quantity': quantity}})
+        return collection.update_one({"name": product_name}, {"$set": {'quantity': quantity}})
 
 
 
