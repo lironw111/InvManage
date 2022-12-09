@@ -9,6 +9,7 @@ from repository import ProductRepository
 
 __all__ = ("app", "run")
 
+
 app = FastAPI()
 
 
