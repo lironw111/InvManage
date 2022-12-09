@@ -30,7 +30,11 @@ class ProductRepository:
     @staticmethod
     def update(product_name: str, quantity: int):
         """" Update quantity to product  """
+<<<<<<< HEAD
         return collection.update_one({"name": product_name}, {"$set": {'quantity': quantity}})
+=======
+        collection.update_one({"name": product_name}, {"$set": {'quantity': quantity}})
+>>>>>>> 19981e07ccb997dddd303c23274b9c9fa877b223
 
 
 
