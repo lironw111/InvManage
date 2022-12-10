@@ -13,9 +13,11 @@ __all__ = ("app", "run")
 
 app = FastAPI()
 
-@app.get('/')
+
+"""@app.get('/')
 def hello():
-    return RedirectResponse(url='/docs')
+    return RedirectResponse(url='/docs')"""
+
 
 @app.get("/product", response_model=list[ProductRead], description="List all the available products")
 def _list_product():
