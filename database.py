@@ -9,5 +9,5 @@ __all__ = ("client", "collection")
 
 client = MongoClient(settings.uri)
 collection: Collection = client[settings.database][settings.collection]
-#collection.create_index("name")
+
 #collection.create_index('name', unique=True)
