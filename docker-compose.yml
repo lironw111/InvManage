@@ -10,6 +10,7 @@ services:
       image: invmanage:1.0
       depends_on:
         - mongo
-      ports: ["8000:8000"]
+      ports:
+       - "8000:8000"
 
 
