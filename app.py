@@ -5,6 +5,7 @@ import uvicorn
 from fastapi import FastAPI, HTTPException
 from models import *
 from repository import ProductRepository
+from fastapi.responses import RedirectResponse
 
 
 __all__ = ("app", "run")
@@ -12,6 +13,9 @@ __all__ = ("app", "run")
 
 app = FastAPI()
 
+@app.get('/')
+def hello():
+    return RedirectResponse(url='/docs')
 
 @app.get("/product", response_model=list[ProductRead], description="List all the available products")
 def _list_product():
