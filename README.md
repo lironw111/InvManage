@@ -21,3 +21,7 @@ assumptions:
 * Category is a list of values, i didn't do any validation on this field.
 * Update can be only on the quantity field so i used patch instead of put.
 
+using API instructions:
+* db_initialize.py - file with data to initialize the DB.
+* for using the api go to localhost:8000
+

@@ -1,0 +1,15 @@
+version: '3'
+services:
+    mongo:
+        image: mongo:latest
+        ports:
+          - "27017:27017"
+        environment:
+              - MONGO_INITDB_DATABASE=storage
+    invmanage:
+      image: invmanage:1.0
+      depends_on:
+        - mongo
+      ports: ["8000:8000"]
+
+
