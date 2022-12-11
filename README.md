@@ -15,14 +15,16 @@ Project structure:
 * database.py: initialization of MongoDB client. 
 * repositories.py: methods that interact with the Mongo database to read or write Product data. 
 * settings.py: load of application settings
+* Dockerfile - invmanage docker file
+* docker-compose.yml - invmanage docker-compose file
 
 assumptions:
 * Because there is no product_id in the product structure that written in the requirements, the name is the unique key.
-* Category is a list of values, i didn't do any validation on this field.
+* Category is a list of values, I didn't do any validation on this field.
 * Update can be only on the quantity field so i used patch instead of put.
 
 using API instructions:
 * db_initialize.py - file with data to initialize the DB.
 * run docker-compose up from the folder where the yml file exist.
-* for using the api go to localhost:8000
+* for using the api go to localhost:8000/docs
 
