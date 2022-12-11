@@ -6,7 +6,7 @@ services:
           - "27017:27017"
         restart: always
         environment:
-              - MONGO_INITDB_DATABASE=storage
+              - MONGO_INITDB_DATABASE=Storage
     invmanage:
       image: invmanage:1.0
       links:

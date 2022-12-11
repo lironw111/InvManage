@@ -24,7 +24,7 @@ def _list_product():
     try:
         return ProductRepository.list()
     except:
-        raise HTTPException(status_code=404, detail="Unable to get list of products")
+        raise HTTPException(status_code=500, detail="Internal server error: Unable to get list of products")
 
 
 @app.delete("/product/{product_name}", description="Delete a single product by its name")

@@ -9,7 +9,7 @@ class BaseSettings(pydantic.BaseSettings):
 
 
 class MongoSettings(BaseSettings):
-    uri: str = "mongodb://localhost:27017/"
+    uri: str = "mongodb://mongo:27017/"
     database: str = "Storage"
     collection: str = "products"
 
