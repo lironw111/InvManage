@@ -10,8 +10,8 @@ Endpoints - define the whole CRUD operations that can be performed on Product en
 
 Project structure:
 * app.py: initialization of FastAPI and all the routes used by the API. 
-    - product_create.py: model used as POST request body. Includes all the fields from the Update model.
-    - product_read.py: model used as GET response body. Includes all the fields from the Create model, plus the id (which comes from the _id field in Mongo document) 
+    - product_create.py: model used as POST request body. 
+    - product_read.py: model used as GET response body.  
 * database.py: initialization of MongoDB client. 
 * repositories.py: methods that interact with the Mongo database to read or write Product data. 
 * settings.py: load of application settings
