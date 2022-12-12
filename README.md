@@ -25,6 +25,7 @@ assumptions:
 
 using API instructions:
 * db_initialize.py - file with data to initialize the DB.
+* run docker build . -t invmanage:1.0
 * run docker-compose up from the folder where the yml file exist.
 * for using the api go to localhost:8000/docs
 
