@@ -8,7 +8,7 @@ from repository import ProductRepository
 from fastapi.responses import RedirectResponse
 
 
-__all__ = ("app", "run")
+__all__ = ("app", )
 
 
 app = FastAPI()
