@@ -59,7 +59,7 @@ def _update_quantity(name, quantity: int):
         raise HTTPException(status_code=404, detail="Can't update quantity")
 
 
-def run():
-    """Run the API using Uvicorn"""
-    uvicorn.run(app)
+#def run():
+  #  """Run the API using Uvicorn"""
+  #  uvicorn.run(app)
 
